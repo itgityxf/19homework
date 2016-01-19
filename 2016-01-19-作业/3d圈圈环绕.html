@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+	*{margin:0;padding:0;list-style: none;}
+	ul{width:133px;height:200px;margin:150px auto;position:relative;left:0;top:0;-webkit-transform-style:preserve-3d;-webkit-transform:perspective(800px) rotateX(-30deg) rotateY(0deg);}
+	li{width:133px;height:200px;position:absolute;left:0;top:0;-webkit-transition:1s all ease;}
+</style>
+<script>
+	window.onload=function(){
+		var oUl=document.getElementsByTagName('ul')[0];
+		var aLi=oUl.children;
+		var i=aLi.length-1;
+		timer=setInterval(function(){
+			aLi[i].style.WebkitTransform='rotateY('+i*360/aLi.length+'deg) translateZ(350px)';
+			i--;
+			if(i<0){
+				clearInterval(timer);
+			}
+
+		},350);
+	};
+</script>
+</head>
+	
+<body style="background:#000;">
+<ul>
+	<li> <img src="images/3.jpg" alt="" /></li>
+	<li> <img src="images/4.jpg" alt="" /></li>
+	<li> <img src="images/5.jpg" alt="" /></li>
+	<li> <img src="images/6.jpg" alt="" /></li>
+	<li> <img src="images/7.jpg" alt="" /></li>
+	<li> <img src="images/8.jpg" alt="" /></li>
+	<li> <img src="images/9.jpg" alt="" /></li>
+	<li> <img src="images/10.jpg" alt="" /></li>
+	<li> <img src="images/11.jpg" alt="" /></li>
+	<li> <img src="images/12.jpg" alt="" /></li>
+	<li> <img src="images/13.jpg" alt="" /></li>
+
+</ul>
+</body>
+</html>
+	
